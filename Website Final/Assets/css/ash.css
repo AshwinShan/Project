@@ -1,0 +1,510 @@
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  <!--max-width: 1000px;-->
+  max-height:500px;
+  position: relative;
+  margin: auto;
+}
+ul {
+    list-style-type: none;
+    <!-- margin-top:-65px; -->
+	
+    padding-top:0px;
+    overflow:hidden;
+    background-color:#191919;
+	font-size:15px;
+	margin-bottom:0px;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+	
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+img{
+height:670px;
+}
+li a:hover {
+    background-color:deepskyblue;
+	color:black;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: whitesmoke;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.content {
+	margin: 0 auto;
+	cursor: pointer;
+	padding-top: 10em;
+}
+.center h1 {
+	text-align: center;
+	color: white;
+	font-weight:1000;
+    font-size: 4em;
+}
+.center p {
+	text-align: center;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+.white {
+	text-align: center;
+	margin: 0 auto;
+	color: black;
+	padding-top: 20px;
+}
+
+.white h4 {
+	color:orangered;
+	font-size:2.5em;
+	letter-spacing:2.5px;
+}
+.white p {
+	padding-top:0px;
+	line-height: 20px;
+	color:black;
+	letter-spacing:2px;
+	line-height:30px;
+}
+.images {
+	margin: 0 auto;
+	padding-top: 0px;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.box img {
+width:320px;
+height:260px;
+}
+
+.navbar{
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+	margin-top:0px;
+}
+.seperator
+{
+    height: 5px;
+    width: 85px;
+    margin: auto;
+    background: #7b6c63;
+    margin-top: 30px;
+	margin-bottom: 70px;
+	
+}
+.imagecontainer
+{
+	margin-bottom: 50px;
+	width: 100%;
+	
+}
+.container img{
+	width:350px;
+	height:290px;
+	margin-left: 50px;
+	float:left;
+}
+.container1 img{
+	width:350px;
+	height:290px;
+	margin-right: 50px;
+	float:right;
+
+	
+}
+.imagecontainer p{
+	padding: 130px;
+	text-align: center;
+	
+	
+}
+.container2 img{
+	width:350px;
+	height:290px;
+	margin-left: 50px;
+	float:left;
+}
+button
+{
+	background-color:#4CAF50;;
+	color: white;
+	font-size: 16px;
+	border-width: 0px;
+	padding: 15px 32px;
+    text-align: center;
+}
+.sections {
+    padding-top: 5px;
+    padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.different-bg {
+    background: #1a1a1a;
+}
+.twitter-content h5 {
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+	text-align: center;
+}
+.twitter-content p {
+    text-align: center;
+	color: white;
+}
+h5{
+	color: orangered;
+	font-size: 15px;
+}
+.heading-content h4 {
+    color:orangered;
+	font-size:2.5em;
+	letter-spacing:2.5px;
+}
+.heading-content p{
+    color: black;
+    width: 79%;
+    margin: 0 auto;
+    line-height: 30px;
+}
+.contain {
+  position: relative;
+  width: 50%;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0.59;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.contain:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.write {
+  white-space:nowrap;
+  color: black;
+	text-transform:uppercase;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+	text-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.black {
+    margin: 0 auto;
+	padding-top: 14px;
+	width: 80%;
+	
+	display: flex;
+	justify-content: space-between;
+}
+.black img{
+   width:350px;
+   height:320px;
+}
+.violet {
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+.violet img{
+   width:350px;
+   height:320px;
+}
+#facebook{
+	padding: 50px;
+}
+.about-us img{
+	height:450px;
+	width:700px;
+	float: left;
+	padding:50px;
+	padding-top: 50px;
+}
+
+.about-us p{
+	text-align: center;
+	padding-top: 100px;
+	padding:100px;
+}
+.about-section {
+    padding: 30px 0;
+    background-color: #f6f6f6;
+}
+.holder {
+	margin: 0 auto;
+	padding-top: 0px;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.place img {
+width:250px;
+height:200px;
+}
+.place p {
+    color: #888;
+  letter-spacing: 0px;
+	margin-top: -13px;
+	
+}
+.different-bg {
+    background: #1a1a1a;
+}
+
+.navbar h3{
+	color: white;
+}
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    margin-top: 0px;
+}
+
+.footer-distributed h3 {
+    color: white;
+    font: normal 36px;
+    margin-left: 4px;
+}
+.footer-distributed h3 span {
+    color: #5383d3;
+}
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: #92999f;
+	padding:3px;
+}
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-distributed .footer-company-name {
+    color: #92999f;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+.fa-map-marker:before {
+    content: "\f041";
+}
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #92999f;
+    vertical-align: middle;
+    margin: 0;
+}
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.fa-phone:before {
+    content: "\f095";
+}
+.fa-envelope:before {
+    content: "\f0e0";
+}
+.footer-distributed .footer-center p a {
+    color: orangered;
+    text-decoration: none;
+}
+.footer-distributed .footer-right {
+    width: 20%;
+	margin-left: 200px;
+}
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.fa-facebook:before {
+    content: "\f09a";
+}
+.fa-twitter:before {
+    content: "\f099";
+}
+.fa-linkedin:before{
+    content: "\f0e1";
+}
+.fa-github:before {
+    content: "\f09b";
+}
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 40px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 17px;
+    margin-top: 25px;
+}
+.footer-center p {
+	font-size:13px;
+}
+.footer-center h5{
+	color:white;
+	margin-top:0px;
+	margin-left:70px;
+}
+#company {
+	color:orangered;
+	margin-left:4px;
+}
+
